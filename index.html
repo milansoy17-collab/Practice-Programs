@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3ed12ef99a.js" crossorigin="anonymous"></script>
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="first-page hidden"  >
+        <h1>Snake Game </h1>
+        <div class="game-details">
+            <div class="game-option">
+                <button class="btn" id="play">Play</button>
+                <button class="btn" id="settings">Settings</button>
+                <p><a href="">How to play ?</a></p>
+            </div>
+            <div class="score">
+                <p>Highest score: <span id="highestscore">0</span></p>
+                <p>Last score: <span id="lastscore">0</span></p>
+            </div>
+            <div class="hint">
+                <i class="fa-solid fa-circle-info"></i>
+                <p>Hint: Use arrow keys to control the snake.</p>
+            </div>
+        </div>
+    </div>
+
+    <canvas id="gameCanvas" width="400" height="400" ></canvas>
+
+    <div class="secPage ">
+        <h1>Game over!</h1>
+        <div class="score-info">
+            <div class="preScore">
+                <p>your score</p>
+                <div class="secScore">10</div>
+            </div>
+            <div class="highScore">
+                <p>Best</p>
+                <div class="secScore" id="finalscore">80</div>
+            </div>
+        </div>
+        <button id="PlayAgain" class="btn" >Play Again</button>
+        <button id="Home-btn" class="btn">Home</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
